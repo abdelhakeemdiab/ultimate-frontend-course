@@ -1,0 +1,2 @@
+# Ignore node_modules folder we do not need
+node_modules
