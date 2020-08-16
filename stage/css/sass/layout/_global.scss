@@ -7,11 +7,12 @@ body {
 .page {
     min-height: 100vh;
     .content-area {
-        min-height: 100%;
+        min-height: 100vh;
         will-change: width;
         width: calc(100% - 250px);
         float: right;
         transition: 0.3s;
+        background-color: #e7ebee;
         &.no-sidebar {
             width: 100%;
         }
