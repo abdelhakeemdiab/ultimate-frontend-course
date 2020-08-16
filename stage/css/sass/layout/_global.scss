@@ -12,5 +12,8 @@ body {
         width: calc(100% - 250px);
         float: right;
         transition: 0.3s;
+        &.no-sidebar {
+            width: 100%;
+        }
     }
 }
