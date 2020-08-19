@@ -1,7 +1,7 @@
 .header
     i.fa.fa-exchange.fa-lg.toggle-sidebar
     .dropdown.show.notifications-container
-        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
             .notify-head
                 | Notifications 
@@ -9,18 +9,19 @@
             .notify-content 
                 ul.list-unstyled
                     li 
-                        i.fa.fa-envelope-o.fa-lg
+                        i.fa.fa-envelope-o.fa-lg.e-mail
                         | You got an e-mail from our company.
                     li
-                        i.fa.fa-money.fa-lg
+                        i.fa.fa-money.fa-lg.eco-money
                         | You got an money from our company.
                     li
-                        i.fa.fa-thumbs-up.fa-lg
+                        i.fa.fa-thumbs-up.fa-lg.big-like
                         | You got a Like from our company.
                     li
-                        i.fa.fa-plane.fa-lg
+                        i.fa.fa-plane.fa-lg.trip
                         | You got a Plane ticket from our company.
                     li
-                        i.fa.fa-recycle.fa-lg
+                        i.fa.fa-recycle.fa-lg.re-cycle
                         | You got a re-cycle from our company.
             .notify-foot.text-center: a(href="#") View All Notifications
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
