@@ -21,7 +21,6 @@ $(function() {
     });
 });
 
-
 /* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
 
@@ -50,3 +49,4 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+

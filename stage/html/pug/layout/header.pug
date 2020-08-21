@@ -25,3 +25,32 @@
                         | You got a re-cycle from our company.
             .notify-foot.text-center: a(href="#") View All Notifications
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.show.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar(src="css/images/avatar.png", alt="User Avatar")
+            span.user 7akeem
+            i.fa.fa-angle-down.fa-lg.arrow-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+            .user-info
+                h3 7akeem Diab
+                p Free Member
+            hr
+            ul.activities-list.list-unstyled
+                li Added Comment on Post "How To Make .. "
+                li Create Post "How To Make .. "
+                li Create Chart on Post "How To Make .. "
+                li Added Comment on Post "How To Make .. Two "
+            hr
+            .row.usermenu-links
+                .col
+                    .link-box
+                        i.fa.fa-gear.fa-lg.fa-fw.setting-icon
+                        span Settings
+                .col
+                    .link-box
+                        i.fa.fa-user.fa-lg.fa-fw.profile-icon
+                        span Profile
+                .col
+                    .link-box
+                        i.fa.fa-power-off.fa-lg.fa-fw.logout-icon
+                        span Log Out
