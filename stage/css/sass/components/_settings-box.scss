@@ -1,0 +1,28 @@
+.settings-box {
+    position:fixed;
+    right: 0;
+    top:0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 20px;
+    transition: 0.3s;
+    .toggle-settings {
+        position: absolute;
+        left: -45px;
+        top: 100px;
+        background-color: #fff;
+        padding: 6px 10px;
+        font-size: 22px;
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+        color:#f00;
+    }
+    &.hide-settings {
+        right: -250px;
+    }
+
+
+    
+}

@@ -19,8 +19,12 @@ $(function() {
             closeFullscreen();  
         }
     });
-});
 
+    // Toggle Gear Setting 
+    $('.toggle-settings').on('click', function () {
+      $(this).parent().toggleClass('hide-settings').find('.fa-gear').toggleClass('fa-spin');
+    });
+});
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
 var elem = document.documentElement;
@@ -50,6 +54,9 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+
+
+
 
 const myMap = new Map()
 const mySet = new Set()

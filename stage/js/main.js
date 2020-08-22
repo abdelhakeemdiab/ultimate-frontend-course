@@ -19,6 +19,11 @@ $(function() {
             closeFullscreen();  
         }
     });
+
+    // Toggle Gear Setting 
+    $('.toggle-settings').on('click', function () {
+      $(this).parent().toggleClass('hide-settings').find('.fa-gear').toggleClass('fa-spin');
+    });
 });
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
@@ -49,4 +54,6 @@ function closeFullscreen() {
     document.msExitFullscreen();
   }
 }
+
+
 
