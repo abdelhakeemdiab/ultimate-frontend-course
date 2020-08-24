@@ -8,9 +8,15 @@
         font-size: 16px;
         cursor: pointer;
         margin-left: 10px;
+        &:hover {
+            color:#27ae60;
+        }
     }
     .toggle-sidebar {
         cursor: pointer;
+        &:hover {
+            color: #27ae60;
+        }
     }
     .notifications-container {
         display: inline-block;
@@ -31,6 +37,7 @@
                 border-width: 10px;
                 border-color: transparent transparent #333 transparent;
             }
+            
             .notify-head {
                 background-color: #333;
                 padding:15px;
@@ -98,6 +105,11 @@
                 font-weight: bold;
                 margin-right: 5px;
                 cursor: pointer;
+                &:hover {
+                    color:#27ae60;
+                    transition: 0.3s;
+                    font-size: 20px;
+                }
             }
             .arrow-down {
                 cursor: pointer;
