@@ -1,4 +1,9 @@
 .settings-box {
+    h4 {
+        font-weight: bold;
+        color: #777;
+        margin: 10px 0 15px 0;
+    }
     position:fixed;
     right: 0;
     top:0;
@@ -17,11 +22,37 @@
         font-size: 22px;
         border-radius: 5px 0 0 5px;
         cursor: pointer;
-        color:#f00;
+        color: red;
+        .setting-color {
+            color: #000;
+        }
     }
     &.hide-settings {
         right: -250px;
     }
+    .color-options {
+        ul {
+            $colors: #27ae60, #2980b9, #c0392b, #f39c12, #8e44ad;
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                     background-color: nth($colors, $i);
+                }
+            }
+            li {
+                width:24px;
+                height: 24px;
+                border-radius: 50%;
+                opacity: 0.3;
+                cursor: pointer;
+                display: inline-block;
+                margin:2px;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
 
 
     

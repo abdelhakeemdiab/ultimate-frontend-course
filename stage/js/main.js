@@ -22,7 +22,17 @@ $(function() {
 
     // Toggle Gear Setting 
     $('.toggle-settings').on('click', function () {
-      $(this).parent().toggleClass('hide-settings').find('.fa-gear').toggleClass('fa-spin');
+      $(this).parent().toggleClass('hide-settings').find('.fa-gear').toggleClass('fa-spin setting-color');
+    });
+
+    // Colors Options Selected
+    var themesClass = [];
+    $('.color-options li').each(function () {
+      themesClass.push($(this).data("theme"));
+    });
+    $('.color-options li').on('click', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+      $('body').removeClass(themesClass).addClass($(this).data("theme"));
     });
 });
 
