@@ -13,6 +13,9 @@ $themes: (
         .classname {
             color: $color;
         }
+        .page .sidebar .links-area li .active:before {
+            border-color: $color;
+        }
         .page .content-area .page-head .page-title {
             color: $color;
         }

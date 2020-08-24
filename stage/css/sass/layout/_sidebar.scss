@@ -58,6 +58,11 @@
                     border-radius: 50%;
                     border: 2px solid #fff;
                 }
+                &.active {
+                    &:before {
+                        border-color: #27ae60
+                    }
+                }
                 &:hover {
                     padding-left: 30px;
                 }
