@@ -31,7 +31,7 @@
     &.hide-settings {
         right: -250px;
     }
-    .option-box {
+    .color-options {
         border-bottom: 1px solid #eee;
         ul {
             $colors: #27ae60, #2980b9, #c0392b, #f39c12, #8e44ad, #2c3e50;
@@ -54,8 +54,11 @@
             }
         }
     }
+    .font-options {
+        select {
+            text-transform: capitalize;
+        }
 
-
-
+    }
     
 }

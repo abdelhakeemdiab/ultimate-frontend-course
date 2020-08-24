@@ -34,6 +34,20 @@ $(function() {
       $(this).addClass('active').siblings().removeClass('active');
       $('body').removeClass(themesClass).addClass($(this).data("theme"));
     });
+
+    // Fonts Options Selected
+    var fontsClass = [];
+    $('.font-options select option').each(function () {
+      fontsClass.push($(this).val());
+    });
+    console.log(fontsClass);
+    $('.font-options select').on('change', function () {
+      console.log($(this).find('option:selected').val());
+      $('body').removeClass(fontsClass).addClass($(this).find('option:selected').val())
+    });
+
+
+    
 });
 
 /* Get the documentElement (<html>) to display the page in fullscreen */
